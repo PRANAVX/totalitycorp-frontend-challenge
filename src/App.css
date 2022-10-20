@@ -32,6 +32,9 @@ a{
   justify-content:space-between;
   /* width:auto; */
 }
+.nav-small{
+  display:none;
+}
 .nav-item{
   font-size:1.2rem;
   opacity:0.7;
@@ -44,3 +47,19 @@ a{
 .nav-logo{
   width:1.3rem;
 }
+
+@media screen and (max-width:740px){
+  .nav-small{
+    list-style: none;
+    height:44px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+
+  .nav-large{
+    display:none;
+  }
+
+  };
+  
