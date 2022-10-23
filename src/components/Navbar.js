@@ -1,14 +1,26 @@
 import React from "react";
 
 export default function Navbar() {
-  return (
-    <div class="nav-container">
-      <nav className="nav">
+  const activateHam = () => {
+    const hamTop = document.querySelector(".hm-top");
+    const hamBot = document.querySelector(".hm-bottom");
+    const navbar = document.querySelector(".nav");
+    const navsmall = document.querySelector(".nav-large");
 
+
+    console.log(hamTop,hamBot);
+    hamTop.classList.toggle("hm-active");
+    hamBot.classList.toggle("hm-active");
+    navbar.classList.toggle("nav-active")
+    navsmall.classList.toggle("nav-small-active")
+  };
+  return (
+    <div className="nav-container">
+      <nav className="nav">
         {/* nav for large screen */}
 
         <ul className="nav-large">
-          <li className="nav-item">
+          <li className="nav-item logo">
             <img
               className="nav-logo"
               src="/images/icons/apple.svg"
@@ -32,7 +44,7 @@ export default function Navbar() {
               alt="Search logo"
             ></img>
           </li>
-          <li className="nav-item">
+          <li className="nav-item bag">
             <img
               className="nav-logo"
               src="/images/icons/bag.svg"
@@ -43,7 +55,12 @@ export default function Navbar() {
 
         {/* nav for small screen */}
         <ul className="nav-small">
-            <li className="nav-item">||</li>
+          <li className="nav-item" >
+            <div className="hamburger" onClick={activateHam}>
+              <span className="hm hm-top"></span>
+              <span className="hm hm-bottom"></span>
+            </div>
+          </li>
           <li className="nav-item">
             <img
               className="nav-logo"
