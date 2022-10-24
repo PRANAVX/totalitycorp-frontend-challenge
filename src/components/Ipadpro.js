@@ -1,25 +1,25 @@
 import React from 'react'
-import "./Main.css"
+import "./Ipadpro.css"
 
 
 
-export default function Main() {
+export default function Mainiphone() {
   return (
     <>
-    <div className="section">
-        <div className="img-container">
+    <div className="section-pro">
+        <div className="img-container-pro">
 
         </div>
-        <div className="info-container" >
-            <div className="info">
-                <h1>iPad</h1>
+        <div className="info-container-pro" >
+            <div className="info-pro">
+                <h1>iPhone-11</h1>
                 <p>Lovable,
                   Drawable,
                   Magical.</p>
                 <p className="sale">Available starting from 28 Oct.</p>
 
             </div>
-            <div className="info-link">
+            <div className="info-link-pro">
                 <a href="/">Learn More{'>'}</a>
                 <a href="/">Order now {'>'}</a>
 
