@@ -2,7 +2,7 @@
 .section{
     position:relative;
      /* background-color:red;  */
-    height:100vh;
+    height:120vh;
     max-width: 80vw ;
     margin:auto;
 } 
@@ -31,8 +31,16 @@ h1{
     font-size:2rem;
     color:#6e6e73;
 }
-.info-link{
-    display:none;
+.info-link a{
+    font-size: 2rem;
+    color: blue;
+    padding-top:1rem;
+    padding-left:1rem;
+    display: inline-block;
+}
+.info-link a:hover{
+
+    text-decoration: underline;
 }
 .info-container{
 
@@ -46,7 +54,7 @@ h1{
 @media screen and (max-width:739px) {  
     .img-container{
         position: absolute;
-        top: 50%;
+        top: 53%;
         left: 50%;
         transform: translate(-50%,-50%);
         background-image: url("../ipad_small.jpg");

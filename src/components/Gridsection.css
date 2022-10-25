@@ -1,0 +1,58 @@
+.grid-container{
+    
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 0.5rem;
+    margin: 1rem 1rem 1rem 1rem ;
+    
+}
+.item-info{
+    position: absolute;
+    color:whitesmoke;
+   
+    left:40%;
+    top:8%;
+}
+.item-info h3{
+    font-size: 3rem;
+    padding: 0.5rem;
+
+}
+.item-info p{
+    font-size:2rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+.item-info a{
+    color:blue;
+    
+    font-size:1.5rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+
+
+
+.grid-item{
+   
+    height:70vh;
+    width:49vw;
+    
+
+}
+.item-container{
+    position: relative;
+    height:100%;
+    } 
+
+.item-bg{
+    background-image: url("../iphone14_large.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100%;
+    
+}

@@ -12,7 +12,7 @@
     top: 50%;
     left: 37%;
     transform: translate(-50%,-50%);
-    background-image: url(http://localhost:3000/static/media/pro_large.57f941eb8123f4dc1ab8.jpg);
+    background-image: url(../pro_large.jpg);
     background-position: 32vw;
     height: 100vh;
     width: 100vw;
@@ -31,9 +31,7 @@ h1{
     font-size:2rem;
     color:#6e6e73;
 }
-.info-link-pro{
-    display:none;
-}
+
 .info-container-pro{
 
     color: white;
@@ -41,6 +39,17 @@ h1{
     top: 37%;
     left: 10%;
 
+}
+.info-link-pro a{
+    font-size: 2rem;
+    color: rgb(24, 24, 237);
+    padding-top:1rem;
+    padding-left:1rem;
+    display: inline-block;
+}
+.info-link-pro a:hover{
+
+    text-decoration: underline;
 }
 
 
